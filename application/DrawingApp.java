@@ -760,14 +760,11 @@ public double[] lineMapper2(double startX, double startY, double width, double h
 
 		currentID = register.getFigure(registerIndex).getId();
 
-		System.out.println("Aktueller Wert von currentID vor der ID-Weiche: " + currentID);
-
 
 
 		if (currentID.equals("Rechteck") || currentID.equals("Quadrat")) {
 			register.getFigure(registerIndex).setQuadrangle(currentWidthData, currentHeightData);
 		} else if (currentID.equals("Ellipse") || currentID.equals("Kreis")) {
-			System.out.println("Aktueller Wert von currentID vor dem Eintritt in setEllipse: " + currentID);
 			register.getFigure(registerIndex).setEllipse(currentWidthData, currentHeightData);
 		} else if (currentID.contentEquals("Dreieck")) {
 			register.getFigure(registerIndex).setTriangle(currentWidthData, currentHeightData);
