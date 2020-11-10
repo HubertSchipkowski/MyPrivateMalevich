@@ -230,13 +230,10 @@ public class DrawingApp extends Application {
 
 					basisShape[] mixerShapes = basisShape.values();
 
-					for (int i = 0; i < mixerShapes.length; i++ ) {
-						System.out.println(mixerShapes[i]);
-					}
 
 
 					currentMix = mixerShapes[mixer.nextInt(mixerShapes.length)];
-					System.out.println(currentMix);
+
 
 
 					int shapeIndex = canvas.getChildren().size();
@@ -305,9 +302,6 @@ public class DrawingApp extends Application {
 										el.getFill(),
 										el.getStroke()));
 
-								for (int i = 0; i < register.getSize(); i++ ) {
-									System.out.println(register.getIndex(i) + " " + register.getFigure(i).getId());
-								}
 
 
 									break;
@@ -337,9 +331,7 @@ public class DrawingApp extends Application {
 											p3.getFill(),
 											p3.getStroke()));
 
-									for (int i = 0; i < register.getSize(); i++ ) {
-										System.out.println(register.getIndex(i) + " " + register.getFigure(i).getId());
-									}
+
 
 
 										break;
@@ -375,9 +367,7 @@ public class DrawingApp extends Application {
 											p6.getFill(),
 											p6.getStroke()));
 
-									for (int i = 0; i < register.getSize(); i++ ) {
-										System.out.println(register.getIndex(i) + " " + register.getFigure(i).getId());
-									}
+
 
 										break;
 
@@ -406,9 +396,7 @@ public class DrawingApp extends Application {
 											l.getFill(),
 											l.getStroke()));
 
-									for (int i = 0; i < register.getSize(); i++ ) {
-										System.out.println(register.getIndex(i) + " " + register.getFigure(i).getId());
-									}
+
 
 										break;
 
@@ -477,9 +465,6 @@ public class DrawingApp extends Application {
 											  circumferenceLabel,
 											  areaLabel);
 
-									for (int i = 0; i <= register.getSize()-1; i++) {
-										System.out.println("Index: " + register.getIndex(i) + " - ID: " + register.getFigure(i).getId());
-									}
 
 									render(canvas,canvasBackground);
 								}
@@ -509,7 +494,6 @@ public class DrawingApp extends Application {
 				}
 
 
-				System.out.println(e.getEventType());
 			});
 
 
@@ -796,7 +780,7 @@ public double[] lineMapper2(double startX, double startY, double width, double h
 		currentCircumferenceData = Double.parseDouble(currentCircumferenceText);
 		currentAreaData = Double.parseDouble(currentAreaText);
 		} catch(NumberFormatException e) {
-			System.out.println("Keine numerische Eingabe.");
+
 			currentIndexText = String.valueOf(currentIndexData);
 			currentStartXText = String.valueOf(currentStartXData);
 			currentStartYText = String.valueOf(currentStartYData);
