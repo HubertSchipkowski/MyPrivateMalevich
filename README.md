@@ -11,4 +11,4 @@
  - Manipulate any drawn shape through data value input fields (x-position, y-position, width, height)
  - See the calculated area and circumference of any selected shape
  - See the type name of the shape which dynamically switches when changing the aspect ratio in the data input fields (i.e., from 1: (x > 1) ("Rectangle") to 1:1 ("Square"))
- - The joy of your own abstract masterpiece!
+ - The joy of creating as many abstract masterpieces as you want!
