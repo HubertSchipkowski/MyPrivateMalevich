@@ -30,7 +30,7 @@ import javafx.scene.shape.Rectangle;
  *
  * Little desktop drawing application in Java with JavaFX.
  *
- * @author      Hubert Schipkowski (schipkowski@sincerelycontent.com)
+ * @author      Hubert Schipkowski
  *
  *
  * @version     1.0.1, 28.06.2020
